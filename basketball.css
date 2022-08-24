@@ -3,8 +3,19 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
+@font-face {
+    font-family: 'Digital Display';
+    src: url('Assets/Digital-Display.woff2') format('woff2'),
+        url('Assets/Digital-Display.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 .container {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     background-color: #1B244A;
     width: 800px;
@@ -15,11 +26,36 @@ body {
 
 .container h3 {
     color: white;
+    font-weight: 700;
+    font-size: 40px;
 }
 
-.container p {
-    color: red;
+.scorebox {
+    position: relative;
+    background-color: black;
+    height: 100px;
+    width: 135px;
+    display: flex; 
+    justify-content: center; 
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.scorebox p {
+    color: #F94F6D;
     font-family: "digital", monospace;
     font-weight: bold;
     font-size: 50px;
+
+}
+
+button {
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #9AABD8;
+    border-color: #9AABD8;
 }

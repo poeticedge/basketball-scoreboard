@@ -9,15 +9,25 @@
 </head>
 <body>
     <div class="container">
-        <div home-section>
+        <div class="home-section">
             <h3>HOME</h3>
-            <p id="home-score">0</p>
+            <div class="scorebox">
+                <p id="home-score">0</p>
+            </div>
+            <button id="increment-btn" onclick="homeIncrement()">+1</button>
+            <button id="increment-btn" onclick="homeIncrement(count += 1)">+2</button>
+            <button id="increment-btn" onclick="homeIncrement(count += 2)">+3</button>
         </div>
         <div class="guest-section">
             <h3>GUEST</h3>
-            <p id="guest-score">0</p>
+            <div class="scorebox">
+                <p id="guest-score">0</p>
+            </div>
+            <button id="increment-btn" onclick="guestIncrement()">+1</button>
+            <button id="increment-btn" onclick="guestIncrement(count += 1)">+2</button>
+            <button id="increment-btn" onclick="guestIncrement(count += 2)">+3</button>
         </div>
     </div>
-    <script src="unit-converter.js"></script>
+    <script src="bascketball.js"></script>
 </body>
 </html>
