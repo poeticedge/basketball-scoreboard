@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1B244A;
+    width: 800px;
+    height: 600px;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.container h3 {
+    color: white;
+}
+
+.container p {
+    color: red;
+    font-family: "digital", monospace;
+    font-weight: bold;
+    font-size: 50px;
+}
